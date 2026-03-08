@@ -20,6 +20,7 @@ function thisinfo(){
 thisinfo()
 
 console.log(this);//gives empty {}
+//browswer me this ka global variable window hota hai jisme sari cheeje hoti hai
 
 
 /////ArrowFunction
