@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="heading"> javascript learning</h1>
+    <button class="start">start</button>
+    <button class="stop">stop</button>
+</body>
+<script>
+    ////setTimeout and clerTimeout
+    const time=setTimeout(function (){
+    console.log("hello")
+    },3000)
+
+    clearTimeout(time);
+
+    ///////setInterval and clearInterval
+    const interval1=function () 
+    {console.log('hello',Date.now());
+     };
+   const interval2= setInterval(interval1,5000);
+   let interval3;
+    document.querySelector('.stop').addEventListener( 'click',function(){clearInterval(interval2);
+        clearInterval(interval3);
+    })
+   document.querySelector('.start').addEventListener( 'click',function(){
+  interval3=  setInterval(interval,5000);
+   })
+</script>
+</html>

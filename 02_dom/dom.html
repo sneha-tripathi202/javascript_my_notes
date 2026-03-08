@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width:200px;
+            height:200px;
+            border:2px solid black;
+            margin:20px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="heading">hello javascript</h2>
+    <div id="box">
+        <div class="li">
+            <li>mango</li>
+            <li>gavava</li>
+        </div>
+    </div>
+    <div id="box"></div>
+    <div id="box"></div>
+       
+       
+<script>
+    //     var heading=document.querySelector("h2").innerText=  document.querySelector("h2").innerText+" from apna college students";
+    //    console.log(heading); 
+       
+    //    var boxes=document.querySelectorAll(".box");
+    //     var i=1;
+    //    for(const box of boxes){
+    //        box.innerText=`this is box ${i}`;
+    //        i++;
+
+    //    }
+    //    boxes.style.color="red";
+    //     // it will not work because boxes is a nodelist
+    //     boxes[0].style.color="red";
+    //     let button=document.createElement("button");
+    //     button.innerText="click me";
+    //     button.style.backgroundColor="red";
+    //     button.style.color="white";
+    //     document.querySelector("body").prepend(button);
+
+
+        ////dom practice
+let boxes=document.getElementsByTagName('div');//tag and class givs html collection
+let boxes1=document.querySelectorAll('#box');
+ let Array=[...box];
+for(const box of boxes){
+  box.innerText='hello'
+}
+console.log(boxes1);
+console.log(boxes);
+
+
+
+       
+</script>
+</body>
+</html>

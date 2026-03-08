@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color:white;">
+    <h1>LISTS OF ITEMS</h1>
+    <ul> </ul>
+    <h1>List of language</h1>
+    <ul class="ul"></ul>
+</body><script>
+//     const items=document.querySelecter(".items");
+//     console.log(items);
+//     function LISTS(items){
+//     const li=document.createElement("li");
+//     const ul=document.querySelector("ul")
+
+//     ul.append(li);
+//     }
+//   LISTS(mango);
+ function newList(fruits){   //fist approch
+  const li=document.createElement('li');
+    li.innerText=`${fruits}`;
+    document.querySelector('ul').append(li);
+
+}
+newList("mango");
+newList("grapes");
+
+function addNewList(language){  //second approch
+    const li=document.createElement('li');
+    li.appendChild(document.createTextNode(language));
+    document.querySelector('.ul').append(li);
+}
+      addNewList("paython");
+      addNewList("java");
+      //edit
+
+     const listChange=document.createElement('li')
+     listChange.textContent="mojo";
+     const firstChild=document.querySelector('.ul:firstChild');
+     listChange.replaceWith(firstChild);
+
+
+      </script>
+</html>

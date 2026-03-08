@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .card{
+        width:250px;
+        min-height: 400px;
+        background-color: rgb(74, 162, 162);
+        border-radius: 5px;
+    }
+    img{
+        width:150px;
+       height:250px;
+        padding:40px;
+    }
+    h4{
+        padding-left:  10px ;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+    <div class="img"></div>
+    
+</div>
+</body>
+<script>
+    // XMLHttpRequest() that are class we get reference its with
+    // new keyword
+   let xtr= new XMLHttpRequest();
+   
+    let requesturl='https://api.github.com/users/hiteshchoudhary';
+    xtr.open('GET',requesturl)//here its not called itself
+    // xtr.send();open called here
+     xtr.onreadystatechange=function(){// continues track state 
+      console.log('xtr',xtr.readyState);//tell or track state of request
+      if(xtr.readyState===4){
+        let data=JSON.parse(this.responseText); 
+        console.log(data);
+        //....its give all about api info
+        //in form of string that fetching is defficult to change in jason or called object parse is method that change string to json
+       let follow= data.followers;
+        let card=document.querySelector('.img');
+        card.innerHTML="<img src='https://avatars.githubusercontent.com/u/11613311?v=4'></img>"
+        let heading=document.createElement("h4").innerText=`follower:${follow}`
+    ; 
+        document.querySelector('.img').append(heading);
+           } 
+    }
+    xtr.send();
+    
+     
+    
+</script>
+</html>

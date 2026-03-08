@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black;color: aliceblue;">
+    <h1>background-color changing</h1>
+    <button class="start">start</button>
+    <button class="stop">stop</button>
+</body>
+<script>
+    const colorChange=function (){
+        let hex='0123456789ABCDF';
+        let color='#';
+        for(let i=0;i<=5;i++){
+            color+=hex[Math.floor(Math.random()*16)];
+        }
+        return color;
+    };
+    let set1;
+    const setColor1=function(){
+
+     set1=setInterval(setcolor,1000);
+    function setcolor(){
+                document.body.style.backgroundColor=colorChange();
+                console.log('hello');}
+    };
+    
+    document.querySelector('.start').addEventListener('click',setColor1);
+    document.querySelector('.stop').addEventListener('click',function(){
+        clearInterval(set1);
+
+    })
+</script>
+</html>

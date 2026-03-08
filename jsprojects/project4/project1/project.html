@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+             background-color: black;
+            display: flex;;
+            justify-content: center;
+            margin-top:20vh; 
+         font-family: poppins,sans-serif;       }
+        .card{
+            width:30vw;
+            background:linear-gradient(135deg,#00feba,#5b548a);
+            color:#fff;
+            border-radius:20px;
+        
+
+        }
+        .search{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 10px;
+
+        }
+        button{
+            border:none;
+            outline: none;
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            border-radius: 50%;
+            cursor: pointer;
+           
+        }
+        .search input{
+            width: 75%;
+            height:60px;
+            padding:7px 10px 0 10px;
+            border-radius: 30px;
+            border: none;
+            margin: 0 10px ;
+
+        }
+        button img{
+            width: 20px;
+            height: 20px;   
+            object-fit: cover;
+
+            
+        }
+        .weather{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        
+        }
+        .weather img{
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+        }  
+        .temp{
+            margin:0;
+            font-size: 70px;
+    
+        } 
+        .location{
+            margin:0;
+            text-transform: capitalize;
+            font-size:50px;
+            font-weight: 500;
+        }
+        .huminity,.wind{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px 25px;
+        }
+        .hum{
+            margin-left: -100px;
+            font-size: 15px;
+        
+            
+        }
+        .huminity img,.wind img
+        {
+            width: 35px;
+            height: 35px;
+            object-fit: cover;
+        }
+        .hum h1,.wind h1
+        {
+            margin: 0;
+            font-size: 30px;
+            font-weight: 500;
+        }
+        .hum h2 ,.wind h2
+       {
+        margin: 0;
+        font-size: 15px;
+        font-weight: 500;
+        }        
+
+    </style></head>
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Enter city name">
+            <button><img src="search-img.png" alt="Search"></button>
+        </div>
+       <div class="weather">
+        <img src="rain-cloud.png" alt="rain">
+        <h1 class="temp">22°C</h1>
+        <h2 class="location">satna</h2>
+       </div>
+       <div class="details">
+        <div class="huminity">
+            <img src="huminity.png" alt="">
+            <div class="hum">
+                <h1>50%</h1>
+                <h2>Humidity</h2>
+            </div>
+            <div class="wind">
+                <img src="wind.png" alt="">
+                <div class="win">
+                    <h1>10 km/h</h1>
+                    <h2>Wind</h2>
+            </div>
+        </div>
+       </div>
+    </div>
+    <!-- script -->
+    <script>
+        const apikey="3f6a392a15a2c7ad143a21dfff1f3e6";
+        const apiurl="https://api.openweathermap.org/data/2.5/weather?&units=metric&q=banglore";
+        
+    </script></body>
+</html>
