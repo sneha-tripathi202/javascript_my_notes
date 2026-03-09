@@ -13,13 +13,13 @@ console.log(object.greet());
 
 function thisinfo(){
     let username="santosh"
-    console.log(`${this.usertname}`);//undefined value noy working this in function
-    console.log(this);//fuction ke ander bhut sari info milti hai object ke form me
+    console.log(`${this.usertname}`);//undefined value not working this in function
+    console.log(this);//function ke ander bhut sari info milti hai object ke form me
     
 }
 thisinfo()
 
-console.log(this);//gives empty {}
+console.log(this);//gives empty {} in node environment
 //browswer me this ka global variable window hota hai jisme sari cheeje hoti hai
 
 
