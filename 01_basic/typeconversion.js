@@ -15,7 +15,7 @@ console.log(typeof Number(age));
    
 age="abc11"
 console.log(typeof Number(age));//number
-console.log( Number(age));//NaN
+console.log( Number(age));//NaN (not a number)
 
 //conversion in boolean
 let isName=""//false

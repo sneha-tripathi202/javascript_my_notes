@@ -1,5 +1,5 @@
 // constructor se singalton bnta hai literal se nhi bnta
-//javascript ko three type se declare kiya jata hai
+//object ko three type se declare kiya jata hai
 //1.literals 2.new keyword 3.consturctor
 
 // literals
@@ -20,9 +20,9 @@ console.log(object['name']);
 
 //how to use symbol in object
 
-const person={}
-person.name="ram"
-person.age=21
+const person={}                   
+person.name="ram"                 
+person.age=21                      
 let quality=Symbol()
 person[quality]="good man"
 
@@ -55,6 +55,12 @@ console.log(object.hasOwnProperty("name"));//checking key in object
 
 
 ///object destructuring
+// destructuring is a convenient way to unpack values from arrays
+//  or properties from objects into separate variables.
+// roules
+// - Variable ka naam property ke naam se match hona chahiye agar tum rename nahi kar rahi ho.
+// - Agar tum variable ka naam alag rakhna chahti ho, to tumhe rename syntax use karna padega.
+
 
 const book={
     bookName:"untold Story",
@@ -72,7 +78,44 @@ console.log(`${bookName} by ${bookauth}`);
 const {bookName:name}=book//give new name
 console.log(name);
 
+//nested destucturing
 
+const book1={
+    bookName:"untold Story",
+    bookauth:"us chauhan",
+    bookchap:{
+        chap1:"life",
+        chap2:"depression"
+    }}
+
+    const {bookchap:{chap1}}=book1
+    console.log(chap1);
+    
+const book2={
+    bookName:"love",
+    bookauth:"us chauhan",
+    bookchap:{
+        chap1:{
+            chapname:" love life",
+            chapsummry:"lovely life of my love",
+            parts:{
+                part1:"meetup"
+            }
+        },
+        chap2:"brekup"
+    }}
+ 
+    const {bookchap}=book2
+    console.log(bookchap);
+    const {bookchap:{chap1:chap}}=book2
+    console.log(chap);
+    const {bookchap:{chap1:{parts:{part1}}}}=book2
+    console.log(part1);
+
+
+
+
+    
 
 
 
