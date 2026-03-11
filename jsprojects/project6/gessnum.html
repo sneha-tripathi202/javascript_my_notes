@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gess number</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            color: aliceblue;
+           
+        }
+        .wapper{
+            background-color: black;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .outer{
+            width: 40vw;
+            border-radius: 0.25rem;
+            background: linear-gradient(45deg, rgb(91, 88, 88),rgb(4, 3, 3), rgb(41, 38, 38));
+             border: none;
+             box-shadow:  0 4px 10px rgba(0,0,0,0.3);
+
+
+        }
+        .fist{
+            padding: 20px;
+            text-align: center;
+            font-size:2.5em;
+        }
+        .inner{
+            padding: 20px;
+            text-align: center;
+            
+        }
+        .inner1{
+            margin: 20px;
+        }
+        .second{
+            margin: 30px 30px 20px;
+        }
+        .inner2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .input{
+            height: 30px;
+            width: 250px;
+            display: block;
+            margin-bottom: 20px;
+            color: black;
+            font-size:larger;
+        }
+        button{
+            background-color:darkorange;
+            border: none;
+            border-radius: 0.25rem;
+            font-size: large;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+   <div class="wapper"> <div class="outer">
+       <h1 class="fist">Number gessing game</h1>
+        <div class="inner">
+            <div class="inner1"> 
+            <h2>Try and gess the random num betweem 1    to 100</h2>
+            <h2>You have 10 attemts to the gess right number</h2>
+        </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+        <h1 class="second">Gess a number</h1>
+        <div class="inner2">
+            <input class="input" type="text" placeholder="">
+            <button class="button"> Submit Gess</button>
+        </div>
+        <div class="inner3">
+            <h3>Previous gesses : <span class="pregess"></span></h3>
+            <h3 class="innerh3">Remaining Attemps : <span class="remgess">10</span></h3>
+        </div>
+        </div>
+    </div></div>
+    <script src="gessnum.js"></script>
+</body>
+</html>
