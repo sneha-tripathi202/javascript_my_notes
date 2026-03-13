@@ -8,7 +8,7 @@ let age=11//num
     //not required any definition of variable
 
 
-//data ko memmory me kaise store karte hai aur kaise accses karte hai 
+//data ko memory me kaise store karte hai aur kaise accses karte hai 
 // iske hisab se two parts me define kiya gaya hai
 
 
@@ -50,3 +50,18 @@ const objectCopy=object
 objectCopy.name='ram'
 console.log(object);//ram
 console.log(objectCopy);//ram
+
+//practice
+// heep 
+let variable=34
+ let variabletwo=variable
+   variabletwo=67
+   console.log(variable,variabletwo);
+
+   //stack me 
+   let array=[2,34,5,6]
+    let arraytwo=array
+     arraytwo.push(4)
+     console.log(array,arraytwo);
+     
+   
