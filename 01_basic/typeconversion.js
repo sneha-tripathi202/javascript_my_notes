@@ -36,6 +36,20 @@ console.log("3"+1);//31
 console.log("2"+2+1);//221
 console.log(2+2+"1")//41
 
+//practice
+
+let alpa=34
+let empty={ }//true
+let empty2=[ ]//true
+let empty3="" //false
+let empty4=" " //true
+
+console.log( Boolean(empty4) );
+console.log( typeof String(alpa));//34 type string
+console.log(BigInt(alpa));//34n
+console.log(Symbol(alpa));//symbol 34
+
+
 
 
 
