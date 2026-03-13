@@ -1,0 +1,1 @@
+object.seal(object);

@@ -37,7 +37,15 @@ person.ability=function(){
 }
 console.log(person.ability());
 
-// object.freeze(object);
+// object.freeze(object);ek object ko completely 
+// immutable bana deta hai (na properties add/delete ho sakti hain,
+//  na unke values change hote hain)
+// object.seal(object);
+// properties add/delete nahi ho sakti, lekin existing
+//  properties ke values change kiye ja sakte hain.
+
+
+
 
 //concating object
 const obj1={1:"a",2:"b"}
@@ -66,6 +74,9 @@ const book={
     bookName:"untold Story",
     bookauth:"us chauhan"
 }
+const {bookName:name}=book
+console.log(bookName);
+
  //kyoki hame jab in key ko multiple times access karna hota hai 
  // to bar bar yr likhna padta hai
   
@@ -75,7 +86,7 @@ console.log( book.bookName);
 const {bookName,bookauth}=book
 console.log(`${bookName} by ${bookauth}`);
 
-const {bookName:name}=book//give new name
+const {bookName:name2}=book//give new name
 console.log(name);
 
 //nested destucturing
@@ -111,6 +122,24 @@ const book2={
     console.log(chap);
     const {bookchap:{chap1:{parts:{part1}}}}=book2
     console.log(part1);
+
+
+// practice 
+const student = {
+  name: "Sneha",
+  course: "B.Tech",
+  skills: ["React", "Node.js", "Tailwind"]
+};
+
+student.city="indore"
+delete student.course
+console.log(student);
+//Question: Agar tumhe ek object ke andar nested properties
+//  safely access karni ho (without error), to kaunsa operator use karogi?
+//  user?.profile?.email(Optional Chaining Operator (?.) )
+
+
+
 
 
 
