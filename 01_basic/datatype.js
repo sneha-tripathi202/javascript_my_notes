@@ -62,6 +62,8 @@ let variable=34
    let array=[2,34,5,6]
     let arraytwo=array
      arraytwo.push(4)
-     console.log(array,arraytwo);
+     console.log(array,arraytwo);            
+     console.table(array,arraytwo);   //tabluler form stucture
+               
      
    
