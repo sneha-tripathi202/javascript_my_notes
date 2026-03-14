@@ -26,3 +26,13 @@ for (const [key,value] of map) {
     console.log(key,value);
     
 }
+
+let fruits=["mango","gavava","banana"]
+for(const i of fruits){
+    console.log(i);
+    
+}
+
+let newMap=new Map();
+newMap.set("name","saneha")
+console.log(newMap.get("name"));
