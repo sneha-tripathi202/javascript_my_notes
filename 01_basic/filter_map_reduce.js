@@ -68,7 +68,7 @@ let pensinfo=[
  
  
 
- //kyoki ye sabhi methods value return karte hai so inhe variable me stire kiya jata hai
+ //kyoki ye sabhi methods value return karte hai so inhe variable me store kiya jata hai
 
   //nesting
 let pensinfo2=[
@@ -89,9 +89,34 @@ let pensinfo2=[
     }
 ]
 
-let totalitem=pensinfo2.map((item,i)=>{
-    return item
-}).reduce((acc,item)=>acc+item.price,0)///jo array map se aayega useko fir ye proccess karata hai
-       console.log(totalitem);
+// let totalitem=pensinfo2.map((item,i)=>{
+//     return item
+// }).reduce((acc,item)=>acc+item.price,0)///jo array map se aayega useko fir ye proccess karata hai
+//        console.log(totalitem);
        
+
+  //nesting
+let pensinfo3=[
+    {
+      pencol:"black",
+      pencom:"pentonic",
+      price:10
+    },
+    {
+      pencol:"red",
+      pencom:"ritometer",
+      price:30
+    },
+    {
+      pencol:"blue",
+      pencom:"sparcale",
+      price:40
+    }
+]
+
+let maps=pensinfo3.map((ele)=>{return ele
+}).filter((ele)=>ele.pencom=="pentonic").reduce((acc,item)=>acc+item.price,0)
+console.log(maps)
+
+
 
