@@ -13,7 +13,6 @@ array.forEach((ele)=> {
 });
 array.forEach(( ele,index,array)=>{
     console.log( index + "->:" +ele + "->" + array);
-    console.log(array);
     
     
 })
@@ -46,3 +45,13 @@ pens.forEach((items)=> {
     
     
 });
+const arra=[4,5,6,7,8]
+arra.forEach((value,i,array)=>{
+console.log(`${i} : ${value} :) ${array}`);
+
+})
+
+pens.forEach((ele)=>{
+   console.log(ele.pencol);
+   
+})
