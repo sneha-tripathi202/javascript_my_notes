@@ -18,3 +18,13 @@ for (const key in array) {
      console.log(array[key]);
     
 }
+
+const docter={
+    name:"ashima",
+    degree:"MBBS",
+    experiense:"3-Years"
+}
+for(const key in docter){
+   console.log(`${key} : ${docter[key]}`);
+   
+}
