@@ -1,5 +1,75 @@
 // excution order
-// syncroniys code => then.callback(microtask)=>async(microtask)=>settimeout(macrotask)
+// syncronys code => then.callback(microtask)=>async(microtask)=>settimeout(macrotask)
+
+//promise
+
+const promise=new Promise((res,rej)=>{
+    setTimeout(()=>{
+    console.log("Welcome");
+    res();
+    },2000)
+})
+promise.then(()=>{
+    console.log("to website");
+    
+})
+
+//problem 1console.log("Start");
+
+console.log("Start");
+
+const promise1 = new Promise((resolve) => {
+  console.log("Inside Promise 1");
+  resolve("Resolved 1");
+});
+
+promise1.then((res) => {
+  console.log(res);
+});
+
+const promise2 = new Promise((resolve) => {
+  setTimeout(() => {
+    console.log("Inside setTimeout");
+    resolve("Resolved 2");
+  }, 0);
+});
+
+promise2.then((res) => {
+  console.log(res);
+});
+
+console.log("End");
+
+
+//  Promise.all
+// - Purpose: Multiple Promises ko ek saath run karna aur tabhi resolve karna jab sab resolve ho jaayein.
+// - Agar ek bhi reject ho jaata hai → pura Promise.all reject ho jaata hai.
+// - Use case: Jab tumhe parallel tasks ka result ek saath chahiye (jaise multiple API calls).
+
+
+//  Promise.race
+// - Purpose: Multiple Promises ko ek saath run karna, lekin jo sabse pehle settle (resolve/reject) ho jaaye, uska result return karna.
+// - Baaki Promises ignore ho jaate hain.
+// - Use case: Jab tumhe fastest response chahiye (jaise multiple servers se data fetch karna aur pehle wale ka use karna).
+
+let p1=new Promise((res,rej)=>res("sneha"))
+let p2=new Promise((res,rej)=>res("tripathi"))
+let p3=new Promise((res,rej)=>res("utkarsh"))
+
+Promise.all([p1,p2,p3]).then((user)=>console.log(user))
+Promise.race([p1,p2,p3]).then((user)=>console.log(user))
+
+async function test() {
+  try {
+    await Promise.reject("Failed");
+    console.log("After await");
+  } catch (err) {
+    console.log("Caught:", err);
+  }
+}
+
+test();
+
 
 
 
