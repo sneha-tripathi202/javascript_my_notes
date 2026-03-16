@@ -48,4 +48,30 @@ add(2,3,callback)
 }
 const printsneha=setTimeout(printme,2000)
 
-// question
+
+//  Callback Hell
+// - Structure: Nested pyramid of callbacks (ek callback ke andar dusra, phir uske andar teesra).
+// - Problem:
+// - Code unreadable ho jaata hai (indentation chaos).
+// - Error handling har level pe karna padta hai.
+// - Debugging aur maintenance mushkil.
+// - Har callback apne parent ke result ka wait karta hai.
+// - Is wajah se code pyramid jaisa lagta hai.
+
+
+
+//  Promises
+// - Structure: Flat chaining with .then(). 
+// - Improvement:
+// - Nesting khatam ho jaata hai.
+// - Centralized error handling with .catch().
+// - Code zyada readable.
+// - Promises me bhi dependency hoti hai, lekin wo flat chain ke through handle hoti hai.
+// - Har .then() apne parent ke resolved value ko receive karta hai.
+
+
+// Async/Await (Linear Dependency)
+// - Async/await me dependency aur bhi clear ho jaati hai, kyunki code synchronous jaisa lagta hai.
+
+
+
