@@ -1,3 +1,8 @@
+// excution order
+// syncroniys code => then.callback(microtask)=>async(microtask)=>settimeout(macrotask)
+
+
+
 // const clickme = new Promise((resolve, reject) => {
 
 //     setTimeout(() => {
