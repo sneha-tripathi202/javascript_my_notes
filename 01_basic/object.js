@@ -75,7 +75,7 @@ const book={
     bookauth:"us chauhan"
 }
 const {bookName:name}=book
-console.log(bookName);
+// console.log(bookName);
 
  //kyoki hame jab in key ko multiple times access karna hota hai 
  // to bar bar yr likhna padta hai
@@ -138,8 +138,20 @@ console.log(student);
 //  safely access karni ho (without error), to kaunsa operator use karogi?
 //  user?.profile?.email(Optional Chaining Operator (?.) )
 
+//property descriptor
 
+let pd={}
+Object.defineProperty(pd, "name", {
+  value: "Sneha",
+  writable: true,
+  enumerable: true,
+  configurable: true
+});
 
+console.log(pd);
+
+const descriptor = Object.getOwnPropertyDescriptor(pd, "name");
+console.log(descriptor);
 
 
 
