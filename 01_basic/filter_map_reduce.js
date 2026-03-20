@@ -118,5 +118,15 @@ let maps=pensinfo3.map((ele)=>{return ele
 }).filter((ele)=>ele.pencom=="pentonic").reduce((acc,item)=>acc+item.price,0)
 console.log(maps)
 
-
+const family=[{
+  familyOne:"mohan"
+},
+{
+  familyOne:"mohan"
+},{
+  familyOne:"utkarsh"
+},{
+  familyOne:"sneha"
+},
+]
 
