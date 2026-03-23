@@ -9,7 +9,9 @@
 let array=[1,2,3,4,5]
  let modifyarray=array.map((ele)=>ele*2)
  console.log(modifyarray);
-
+ let array2=[6,7,8,9,0].map((ele)=>ele-2)
+ console.log(array2);
+ 
  
  //filter
  //its return selected array elements

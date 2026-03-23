@@ -19,3 +19,9 @@ console.log(g);
 //js me rule hai ki + two type se work karta hai string concatination and numeric addtion
 //baki operator string ko numeric value me convert karne ki koshish karte hai
 //if convert nahi hota hai to NaN dete hai
+
+//que3
+let values = [0, "", null, undefined, NaN, "false"];
+let falsyvalue=values.filter((ele)=>!ele)
+console.log(falsyvalue);
+
