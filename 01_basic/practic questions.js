@@ -25,3 +25,32 @@ let values = [0, "", null, undefined, NaN, "false"];
 let falsyvalue=values.filter((ele)=>!ele)
 console.log(falsyvalue);
 
+//que 4
+let num=[1,2,3,4,5]
+let squrenum=num.map((ele)=>ele*ele);
+console.log(squrenum);
+
+//que 5
+
+let numb=[1,2,3,4,5,6,7,8]
+let evennum=numb.filter((ele)=>{
+    if(ele%2==0){
+        return ele
+    }
+})
+console.log(evennum);
+
+//que 6
+let number=[1,2,3,4,5]
+let sum=number.reduce((acc,cv)=>acc+cv,0)
+console.log(sum);
+
+//que 7
+let Input= [10, 25, 60, 40, 70]
+let find=Input.find((ele)=>ele>50)// first element in an array that satisfies a given condition (callback function). If no element matches, it returns undefined.
+ console.log(find);
+ 
+
+
+
+
