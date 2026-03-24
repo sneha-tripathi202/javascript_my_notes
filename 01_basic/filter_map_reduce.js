@@ -121,14 +121,24 @@ let maps=pensinfo3.map((ele)=>{return ele
 console.log(maps)
 
 const family=[{
-  familyOne:"mohan"
+  familyOne:"mohan",
+  familymem:4
 },
 {
-  familyOne:"mohan"
-},{
-  familyOne:"utkarsh"
-},{
-  familyOne:"sneha"
+  familymem:6,
+  familyTwo:"mhan"
 },
-]
+{
+  familyThree:"utkarsh",
+  familymem:8
+},
+{
+  familyFour:"sneha",
+  familymem:2
+},
+].map((ele)=>ele).filter((ele)=>ele.familymem>2).reduce((acc,cv)=>acc+cv.familymem,0)
+
+console.log(family);
+
+
 
