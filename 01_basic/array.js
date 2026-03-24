@@ -25,12 +25,39 @@ console.log(array3);
 let array4=["sneha","ram","syam","lalit", "radha"]
 console.log(array4.slice(1,2));//start and end index ["ram","sym","lalit"]
 //Returns a copy of a section of an array
+console.log("aaaa....",array4);
+
 console.log(array4.splice("sneha",3))//["sneha","ram","syam"]
 //Removes and adding elements from an array and, if necessary,
 //  inserts new elements in their place, returning the deleted elements.
 console.log(array4.splice(0,2,"sita"))//["lalit", "radha"]
 console.log(array4);//["sita"]
 
+let arraysplice=[1,2,3,4,5,6,7]
+console.log(arraysplice.splice(1,1,"sneha"));
+console.log(arraysplice);
+
+
+//que1
+let Input= [1,2,3,4,5,6,7]
+function input(k){
+    let last=Input.slice(7-k)
+    Input.splice(7-k)
+    let first=Input
+     console.log(last.concat(first));}
+
+input(3)
+
+// second approch
+
+function inputrevisre(arr,k){
+    let first= arr.slice(arr.length-k)
+    let last=arr.slice(0,arr.length-k)
+    console.log(last);
+    
+    return first.concat(last)
+}
+console.log(inputrevisre([1,2,3,4,5,6,7],3));
 
 
 
