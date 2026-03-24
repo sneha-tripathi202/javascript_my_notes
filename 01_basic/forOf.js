@@ -36,3 +36,24 @@ for(const i of fruits){
 let newMap=new Map();
 newMap.set("name","saneha")
 console.log(newMap.get("name"));
+
+//que
+
+console.log(sumnum([1,2,3,4,5,6]));
+
+function sumnum(arr){
+    let sum=0;
+    for(const i of arr) {
+     sum+=i;}
+     return sum
+}
+
+//que
+
+let string="snehaaahaa"
+ 
+for (const element of string) {
+    string.map((ele)=>ele)
+    
+}
+
