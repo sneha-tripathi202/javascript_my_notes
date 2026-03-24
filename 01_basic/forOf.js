@@ -60,4 +60,5 @@ function stringappears(str){
 }
  
 console.log(stringappears("sneesshneka"));
+//Map(6) { 's' => 3, 'n' => 2, 'e' => 3, 'h' => 1, 'k' => 1, 'a' => 1 }
 
