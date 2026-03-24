@@ -50,10 +50,14 @@ function sumnum(arr){
 
 //que
 
-let string="snehaaahaa"
- 
-for (const element of string) {
-    string.map((ele)=>ele)
-    
+function stringappears(str){
+    let map= new Map()
+   for (const char of str) {
+     map.set(char,(map.get(char)||0)+1);
+     
+   }
+   return map
 }
+ 
+console.log(stringappears("sneesshneka"));
 
