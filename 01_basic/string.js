@@ -3,7 +3,7 @@
 let string="sneha"
 console.log(string.length);
 console.log(string.toString());
-console.log(string.split("",3));//seperator sepecial char like ""
+console.log(string.split('',3));//seperator sepecial char like ""
                             // 3 is limit return array to cut part of string
 console.log(string.replace('ne',"a"));//saha
 console.log(string.indexOf("sneha"));// 0 puri sting ko 1 leta 
@@ -37,3 +37,14 @@ let str2= str1.concat(" utkarsh");
 function checkString(s){
 if(s===Number&& s===''){console.log("its not string");}else{console.log('its string');}}
 checkString('str');
+
+let str="utlarsh"
+console.log(str.indexOf("s"));
+console.log(str.charAt(3));
+console.log(str.split('',5));
+console.log(str.replace('tl','n'));
+console.log(str);
+
+
+
+
