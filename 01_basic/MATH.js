@@ -5,7 +5,7 @@ console.log(Math.round(4.5));//for absolute value 5
 console.log(Math.ceil(4.3));//upper 4
 console.log(Math.floor(4.8));//4 lower
 console.log(Math.random());//generates random valve
-console.log(Math.max(2,3,45,5));//54
+console.log(Math.max(2,3,45,5));//45
 console.log(Math.min(2,3,45,5));//2
 
 console.log(Math.random()*100)//ye 0<=x<=1; 100 se
