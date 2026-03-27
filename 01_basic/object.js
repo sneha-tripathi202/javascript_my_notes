@@ -24,10 +24,14 @@ const person={}
 person.name="ram"                 
 person.age=21                      
 let quality=Symbol()
+let friends=Symbol()
+person[friends]=['mohan','syam','bolu']
 person[quality]="good man"
 
 console.log(person);
 console.log(person[quality]);
+console.log(person[friends]);
+
 
 //function in object
 
