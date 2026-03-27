@@ -141,7 +141,7 @@ changeme();
 
 //promise creation 
 
-const promisepra=new Promise((rej,res)=>{
+const promisepra=new Promise((res,rej)=>{
   let name="sneha"
   if(name=="sneha"){
     setTimeout(()=>{
@@ -156,6 +156,19 @@ const promisepra=new Promise((rej,res)=>{
   
  }).catch(()=>{
   console.log("not complete");
+  
+})
+
+const mypromise=new Promise((resolve,reject)=>{
+  setTimeout(()=>{
+    console.log("welcome back :)"); 
+   let name="seha"
+    return name;
+  },2000)
+})
+mypromise.then(nam)
+console.log("my name",nam).catch(()=>{
+  console.log(" Error occurs");
   
 })
 
