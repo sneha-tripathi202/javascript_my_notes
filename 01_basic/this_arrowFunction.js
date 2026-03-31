@@ -50,6 +50,11 @@ const mul=(a,b)=>(a*b)
 const objectafunc=()=>({username:"sneha",age:21})
 console.log(objectafunc().username);
 
+function Person(name) {
+  this.name = name;
+}
+const p = new Person("Sneha");
+console.log(p.name); // "Sneha"
 
 
 

@@ -5,6 +5,11 @@
 
 ///map that is secoond type of map
 //its return array
+// Key Characteristics of Higher‑Order Functions
+// - Accept functions as parameters (callbacks).
+// - Return functions as values (closures).
+// - Can do both at the same time.
+
 
 let array=[1,2,3,4,5]
  let modifyarray=array.map((ele)=>ele*2)
