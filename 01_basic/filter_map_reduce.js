@@ -10,6 +10,9 @@
 // - Return functions as values (closures).
 // - Can do both at the same time.
 
+// MongoDB में हर collection के अंदर documents होते हैं।
+
+// Document का structure JSON‑like object होता है।
 
 let array=[1,2,3,4,5]
  let modifyarray=array.map((ele)=>ele*2)

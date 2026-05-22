@@ -1,6 +1,7 @@
 //lexical scope
 function outer(){
     let a;
+    console.log(a);
     function inner1(){
      a=10;
     //  console.log(a);
