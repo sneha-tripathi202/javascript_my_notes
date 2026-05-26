@@ -74,4 +74,14 @@ const printsneha=setTimeout(printme,2000)
 // - Async/await me dependency aur bhi clear ho jaati hai, kyunki code synchronous jaisa lagta hai.
 
 
+function sub(a,b,callback2){
+ let sub=a-b;
+ callback2(sub)
+}
+sub(5,3,function callback2( sub) {console.log("subtraction of two no",sub)})
 
+function mul(a,b){
+  let mul=a*b;
+  return function callback3(){
+    console.log("multiplication of two no",mul);
+}}
