@@ -1,3 +1,4 @@
+// array is special type of object that contains multiple value in single variable ,orgnized in a ordered list and every element has a index
 let array= [1,2,3,4]
 console.log(typeof array.toString());//1,2,3,4
 console.log(array.length);//4
@@ -10,12 +11,12 @@ console.log(array2);
 array2.pop()
 console.log(array2);
 array2.shift()
-console.log("s",array2);
-array2.unshift(9)
+console.log("s",array2);//remove items from begning  
+array2.unshift(9)// add items in begnning
 console.log(array2);
 
 array2.includes("9")
-console.log(array2);
+console.log("i",array2);
 console.log(Array.isArray(array));
 let array3=array2.concat(array)
 console.log(array3);
@@ -23,14 +24,16 @@ console.log(array3);
 //allmethods returns array
 
 let array4=["sneha","ram","syam","lalit", "radha"]
-console.log(array4.slice(1,2));//start and end index ["ram","sym","lalit"]
+console.log("slice",array4.slice(1,2));//start and end index ["ram"]
 //Returns a copy of a section of an array
 console.log("aaaa....",array4);
 
 console.log(array4.splice("sneha",3))//["sneha","ram","syam"]
 //Removes and adding elements from an array and, if necessary,
 //  inserts new elements in their place, returning the deleted elements.
-console.log(array4.splice(0,2,"sita"))//["lalit", "radha"]
+console.log(array4);
+
+console.log("/",array4.splice(0,1,"sita"))//["lalit", "radha"]
 console.log(array4);//["sita"]
 
 let arraysplice=[1,2,3,4,5,6,7]

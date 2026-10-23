@@ -5,7 +5,7 @@
 // 3. Variables with var: Hoisted but initialized with undefined. Accessing them
 //                       before assignment gives undefined.
 // 4.Variables with let and const: Hoisted but remain in the Temporal Dead Zone (TDZ)
-//                                  until initialized. Accessing them before declaration 
+//                                  until initialized. Accessing them before initialization
 //                                   throws a ReferenceError.
 // 5.Classes: Also hoisted but behave like let/const—they cannot be accessed before declaration.
 // The Temporal Dead Zone (TDZ) in JavaScript is the period between 
@@ -28,21 +28,26 @@ function name(){
 console.log(age)//it gives undefied work like var age;
 var age=4
 
-console.log(school);//ReferenceError: Cannot access 'school' before initialization
+// console.log(school);//ReferenceError: Cannot access 'school' before initialization
 let school="srsr"
 
 //variable expression
 
-console.log(student("sneha"));//ReferenceError: Cannot access 'student' before initialization
+// console.log(student("sneha"));//ReferenceError: Cannot access 'student' before initialization
 
 const student =function(name){
     return name;
 }
 
-console.log(x); // ReferenceError (TDZ)
+// console.log(x); // ReferenceError (TDZ)
 let x = 5;      // TDZ ends here
 console.log(x); // 5
 
+  greet()
 
+ function greet(){
+    console.log("hello");
+    
+ }
 
 

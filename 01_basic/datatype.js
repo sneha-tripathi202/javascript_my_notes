@@ -66,4 +66,11 @@ let variable=34
      console.table(array,arraytwo);   //tabluler form stucture
                
      
-   
+   const users = [
+  { name: "Sneha", age: 22 },
+  { name: "Rahul", age: 25 }
+];
+
+console.table(users);
+console.table(users, ["name"]);
+console.table(array) ;

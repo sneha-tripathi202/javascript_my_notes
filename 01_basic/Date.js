@@ -1,4 +1,4 @@
-let date=new Date()
+let date=new Date() // CONSTRUCtor
 console.log(date);//2026-03-13T06:39:39.974Z
 console.log(Date.now());//1773384014955 Returns the number of 
 // milliseconds elapsed since midnight, January 1, 1970 Universal Coordinated Time

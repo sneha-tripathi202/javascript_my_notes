@@ -9,7 +9,7 @@ function rest(a,b,...rest){
     console.log(a,b,...rest);
     
 }
-
+ 
 rest([1,2,3,4,5,6])//return array
 
 // 🌟 Spread Operator (...)

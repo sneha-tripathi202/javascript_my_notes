@@ -7,7 +7,7 @@ let name=null
 
 const bigint=1233n
 console.log(typeof bigint);//bigint
-console.log(typeof name);//object
+console.log(typeof name);//undefined
 
 
 //conversion in number
@@ -15,7 +15,7 @@ console.log(typeof Number(age));
    
 age="abc11"
 console.log(typeof Number(age));//number
-console.log( Number(age));//NaN (not a number)
+console.log( Number(age));//NaN (not a number)(value of age)
 
 //conversion in boolean
 let isName=""//false
@@ -25,7 +25,7 @@ let isName=""//false
 console.log(Boolean(isName));
 
 //conversion in String
-
+// Type conversion means changing a value from one data type to another
 const friendno=12345
 console.log( typeof String(friendno));//string
 
@@ -40,11 +40,11 @@ console.log(2+2+"1")//41
 
 let alpa=34
 let empty={ }//true
-let empty2=[ ]//true
+let empty2=[]//true
 let empty3="" //false
 let empty4=" " //true
 
-console.log( Boolean(empty4) );
+console.log( Boolean(empty3) );
 console.log( typeof String(alpa));//34 type string
 console.log(BigInt(alpa));//34n
 console.log(Symbol(alpa));//symbol 34

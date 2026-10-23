@@ -1,4 +1,4 @@
-// string is a sequence of character useed to represent text 
+// string is a sequence of character used to represent text 
 
 let string="sneha"
 console.log(string.length);
@@ -8,7 +8,7 @@ console.log(string.split('',3));//seperator sepecial char like ""
 console.log(string.replace('ne',"a"));//saha
 console.log(string.indexOf("sneha"));// 0 puri sting ko 1 leta 
 console.log(string.charAt(2));// e
-console.log(string.slice(0,2));// utni index ke string ko alag karke deta hai
+console.log("slice",string.slice(0,2));// utni index ke string ko alag karke deta hai
 
 
 // when string have empty then charAt returns -1

@@ -17,3 +17,8 @@ if(true){
     c=9 //ye bhi baher accesible hota hai
 }
 console.log("c",c);
+ //scope means current context where variables and  fuctions are accessible
+ //three type of scope
+ //global scope 
+ //function scope
+ //blocK scope {}
